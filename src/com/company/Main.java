@@ -6,7 +6,5 @@ public class Main {
         HomeCat homeCat = new HomeCat();
         homeCat.name = "Барсик";
         homeCat.sayMyName();
-
-        homeCat.sayMyweight();
     }
 }
