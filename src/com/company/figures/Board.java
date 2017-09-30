@@ -11,5 +11,9 @@ public class Board extends JComponent {
 
     public void paint(Graphics g) {
         circle.draw(g);
+        square.draw(g);
+        triangle.draw(g);
     }
+
+
 }
