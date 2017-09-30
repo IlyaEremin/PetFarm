@@ -1,4 +1,4 @@
-package com.company;
+package com.company.other;
 
 class HomeCat extends Pet {
     @Override
