@@ -4,7 +4,15 @@ import java.awt.*;
 
 public class Circle {
 
+    private int x;
+    private int y;
+
+    public Circle(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
+
     void draw(Graphics graphics) {
-        graphics.drawOval(50, 50, 100, 100);
+        graphics.drawOval(x, y, 100, 100);
     }
 }
