@@ -2,6 +2,7 @@ package com.company.figures;
 
 import javax.swing.*;
 import java.awt.*;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,7 +14,7 @@ public class Board extends JComponent {
 
     private Circle circle = new Circle(50, 50);
     private Square square = new Square(100, 100);
-    private Triangle triangle = new Triangle(150, 150, 200, 250);
+    private Triangle triangle = new Triangle ;
 
 
     public Board() {
@@ -23,14 +24,9 @@ public class Board extends JComponent {
         squaresList.add(new Square(100, 100));
         squaresList.add(new Square(200, 200));
         squaresList.add(new Square(400, 400));
-        triangleList.add(new Triangle(200, 250, 80, 250));
-        triangleList.add(new Triangle(80, 250, 150, 150));
-        triangleList.add(new Triangle(300, 300, 400, 400));
-        triangleList.add(new Triangle(400, 400, 150, 400));
-        triangleList.add(new Triangle(150, 400, 300, 300));
-        triangleList.add(new Triangle(380, 80, 200, 80));
-        triangleList.add(new Triangle(200, 80, 300, 200));
-        triangleList.add(new Triangle(300, 200, 380, 80));
+        triangleList.add(new Triangle());
+        triangleList.add(new Triangle());
+
     }
 
     public void paint(Graphics g) {
@@ -47,10 +43,11 @@ public class Board extends JComponent {
             Square squareListItem = squaresList.get(i);
             squareListItem.draw(g);
         }
-        for (int i = 0; i < triangleList.size(); i++) {
+            for (int i = 0; i < triangleList.size(); i++) {
             Triangle triangleListItem = triangleList.get(i);
             triangleListItem.draw(g);
         }
     }
+
 
 }
